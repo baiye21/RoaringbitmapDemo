@@ -1,0 +1,37 @@
+{
+    "type": "TagAndLogicProcessor",
+    "class_name": "com.demo.roaringbitmap.processor.TagAndLogicProcessor",
+    "params": {
+        "processorList": [
+            {
+                "type": "TagFetcherProcessor",
+                "class_name": "com.demo.roaringbitmap.processor.TagFetcherProcessor",
+                "params": {
+                    "tagType": "cus_class",
+                    "tagTypeIds": [
+                        "A",
+                        "B",
+                        "C",
+                        "D",
+                        "E",
+                        "F"
+                    ]
+                }
+            },
+            {
+                "type": "TagFetcherProcessor",
+                "class_name": "com.demo.roaringbitmap.processor.TagFetcherProcessor",
+                "params": {
+                    "tagType": "cus_risk_level",
+                    "tagTypeIds": [
+                        "R1",
+                        "R2",
+                        "R3",
+                        "R4",
+                        "R5"
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+# 数据准备
+com.demo.roaringbitmap.service.impl.TestDataServiceImpl.initTestData
+客户活动标签：活动之间可重叠
+客户等级标签：只能有一个等级，1～100W覆盖
+客户风险标签：只能有一个风险等级，1～50w覆盖
+
+# 测试接口
+1、数据初始化：
+http://localhost:9999/roaringbitmap/demo/test/test/data
+2、配置测试：
+http://localhost:9999/roaringbitmap/demo/test/test/processor/config?config_name=test_config_1.txt
+
+# 测试配置
+1、客户等级 和 客户风险等级 全交集 只剩1～50w
+test_config_1.txt ：
+
+2、客户等级 和 客户风险等级 部分取并集
+test_config_2.txt ：
+
+3、客户等级 和 客户风险等级 差集 只剩 50w～100w
+test_config_3.txt:
+
+4、交叉逻辑 参与活动1～3, 且客户等级是 D， 且没有风险等级的客户
+test_config_4.txt:
